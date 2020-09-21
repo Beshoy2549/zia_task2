@@ -1,0 +1,73 @@
+.index-page {
+  .descrption {
+    background-color: #fff;
+    padding: 20px 0 10px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  .ibox-content {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    .box-info {
+      background-color: #f3f3f4;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+      h4 {
+        display: inline-block;
+        text-align: center;
+        color: #7f5497;
+        font-weight: 700;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #2f3a3045;
+      }
+      i {
+        color: #7f5497;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      p {
+        text-align: justify;
+        @media (max-width: 768px) {
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
+      .more-info {
+        @media (max-width: 768px) {
+          text-align: center !important;
+        }
+        a {
+          background-color: $mainColor;
+          border-color: $mainColor;
+          color: #fff;
+          transition: all 0.3 ease-in-out;
+          &:hover {
+            background-color: $mainColorHover;
+          }
+        }
+      }
+    }
+  }
+  .upper-footer {
+    text-align: center;
+    padding: 50px 0;
+    color: $scondColor;
+    .help-center-link {
+      font-size: 12px;
+      padding: 10px;
+      background-color: #fff;
+      display: inline-block;
+      a {
+        color: $mainColor;
+        font-weight: 700;
+      }
+    }
+  }
+}

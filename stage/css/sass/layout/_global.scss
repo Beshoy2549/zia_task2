@@ -1,0 +1,48 @@
+body {
+ direction: rtl;
+ overflow-x: hidden;
+ color: #2f4050;;
+ @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+ font-family: 'Cairo', sans-serif;
+ background-color: #f3f3f4;
+ min-height: 100%;
+ position: relative;
+
+
+ ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+ .hvr-float-shadow {
+    display: block !important;
+}
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+ 
+}
+.page {
+    min-height: 100vh;
+    display: flex;
+    .content-area {
+        @media (max-width: 1100px) {
+            width: calc(100% - 70px);
+        }
+        width: calc(100% - 220px);
+        min-height: 100%;
+        transition: .3s;
+        will-change: width;
+         &.no-sidebar {
+             width:calc(100% - 70px)
+         }
+    }
+    .no-diplay {
+        display: none;
+    }
+}

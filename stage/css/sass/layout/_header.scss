@@ -1,0 +1,42 @@
+.appheader {
+    text-align: right;
+    padding: 20px 0 10px;
+    color: #fff;
+    background-color: #fff;
+    border-bottom: 1px solid #e7eaec ;
+    a {
+      background-color: $mainColor;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      padding: 4px 12px;
+      font-size: 14px;
+      margin-right: 15px;
+      cursor: pointer;
+      display: inline-block;
+      transition: all .3s ease-in-out;
+      &:hover {
+        background-color: $mainColorHover;
+      }
+    }
+    .toggle-sidebar {
+      @media (max-width: 1100px) {
+        display: none;
+       }
+    }
+    .announcement-bar {
+        background-color: $scondColor;
+        margin: 0px auto 5px ;
+        &:hover {
+            background-color: $scondColorHover;
+          }
+    }
+    .logout {
+        text-align: center;
+        span{
+            margin-right: 15px;
+            color: #999c9e;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+  }
